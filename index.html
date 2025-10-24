@@ -1,0 +1,139 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" href="image/icon.png" type="image/icon">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+    <!-- Project: MPC4IFC -->
+    <title>MCP4IFC: Toward Building Design on an IFC Level</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <script src="script.js"></script>
+    <div style="max-width: 1000px; flex-direction: column; align-items: center; justify-content: center; display: flex;">
+        <header>
+            <h1><img src="image/icon.png" style="width: 40px; height: 40px; margin-right: -3px;margin-bottom: -3px;">
+                <b>MCP4IFC:</b> Toward Building Design on an IFC Level</h1>
+            <p id="accept">Preprint, 2025</p>
+            <p class="tagline">MPC Server for Generative BIM Design.</p>
+            <section id="authors">
+                <!-- Replace with actual authors -->
+                <a class="name">Author One</a>, 
+                <a class="name">Author Two</a>,
+                <a class="name">Author Three</a>
+            </section>
+            <br>
+            <h2>Affiliations here</h2>
+            <br>
+            <div>
+                <a class="button" href="MPC4IFC-Draft.pdf">
+                    <i class="fas fa-file-pdf"></i> Paper (Preprint)
+                </a>
+                <a class="button" href="#">
+                    <i class="fab fa-github"></i> Code (coming soon)
+                </a>
+                <a class="button" href="#demo">
+                    <i class="fas fa-video"></i> Demo
+                </a>
+            </div>
+            <br>
+        </header>
+        <!-- Optional hero media: replace when available -->
+        <!-- <div style="display: flex; justify-content: center;">
+            <img src="image/hero_mpc4ifc.jpg" style="width: 90%; padding-bottom: 30px;" alt="MPC4IFC overview">
+        </div> -->
+    </div>
+
+
+    <div id="abstract" style="width: 100%;">
+        <div style="max-width: 800px; margin: auto; ">
+            <h3>Abstract</h3>
+                <p style="padding: 40px; padding-top: 0;">We present MCP4IFC, an open-source framework designed to bridge the gap between LLM research and the Architecture, Engineering, and Construction (AEC) industry. It enables AI agents to understand and execute natural language commands within BIM workflows by interacting directly with IFC data models.</p>
+                <p style="padding: 40px; padding-top: 0;">The system operates as a Blender-based server that exposes a suite of BIM-specific tools via the Model Context Protocol (MCP). It uses the robust IfcOpenShell library for all read/write operations on IFC files, ensuring data integrity and standards compliance. With MCP4IFC, an LLM can perform a range of actions, from building a semantically correct house from scratch to querying and editing complex, existing IFC models. Key features include a lightweight retrieval system for IFC documentation and a code-generation fallback for creating custom geometry.</p>
+                <p style="padding: 40px; padding-top: 0;">As a fully open-source project, MCP4IFC provides a foundation for researchers and developers to create and test novel AI-assisted modeling workflows. Any MCP-compatible AI client can use its tools out-of-the-box, fostering an open ecosystem for innovation in AEC. We also present preliminary results from our extensive benchmarking results evaluating current LLM models for BIM tasks.</p>
+        </div>
+    </div>
+
+    <!-- Contributions -->
+    <div id="abstract" style="width: 100%; background-color: white;">
+        <div style="max-width: 800px; margin: auto; ">
+            <h3>Contributions</h3>
+            <ul class="contrib-list">
+                <li>IFC-aware generation: outputs that adhere to IFC entities and relations (draft).</li>
+                <li>Topology- and semantics-consistent reconstruction objectives.</li>
+                <li>Validation protocol aligning geometric fidelity with IFC structural checks.</li>
+                <li>OpenBIM-friendly design compatible with common IFC toolchains.</li>
+            </ul>
+            <p class="note">Note: This section reflects a draft paper. Details may change in the final version.</p>
+        </div>
+    </div>
+
+    <!-- Method Overview -->
+    <div id="abstract" style="width: 100%; ">
+        <div style="max-width: 800px; margin: auto; ">
+            <h3>Method overview</h3>
+            <p style="padding: 40px; padding-top: 0;">The method will be instered here</p>
+            <!-- <img src="image/method_mpc4ifc.png" style="width: 100%; padding-bottom: 30px;" alt="Method diagram"> -->
+        </div>
+    </div>
+
+    <!-- Demo placeholder -->
+    <div id="abstract" style="width: 100%; background-color: white;">
+        <div style="max-width: 800px; margin: auto; " id="demo">
+            <h3>Demo</h3>
+            <p style="padding: 40px; padding-top: 0;">A short demonstration video will appear here.</p>
+            <!-- <video id="main-video" controls>
+                <source src="video/demo_mpc4ifc.mp4">
+            </video> -->
+        </div>
+    </div>
+
+    <!-- Links -->
+    <div id="abstract" style="width: 100%; ">
+        <div style="max-width: 800px; margin: auto; ">
+            <h3>Resources</h3>
+            <p style="padding: 40px; padding-top: 0;">
+                • Paper (Draft): <a href="MPC4IFC-Draft.pdf">MPC4IFC-Draft.pdf</a><br>
+                • Code: <a href="#">coming soon</a><br>
+                • Video: <a href="#demo">demo section</a>
+            </p>
+        </div>
+    </div>
+
+    <!-- Optional BibTeX (draft placeholder) -->
+    <div id="abstract" style="width: 100%; background-color: white;">
+        <div style="max-width: 800px; margin: auto; ">
+            <h3>BibTeX (Draft)</h3>
+            <div class="citation-text">@article{mpc4ifc2025,
+  title={MPC4IFC: Toward IFC-compliant BIM generation from 3D data},
+  author={To be updated},
+  journal={ArXiv/Preprint},
+  year={2025},
+  note={Draft under review}
+}</div>
+        </div>
+    </div>
+
+     <div id="abstract" style="width: 100%; background-color: white;">
+        <div style="max-width: 800px; margin: auto; ">
+            <h3>Contact</h3>
+            <p style="padding: 40px; padding-top: 0;">For questions about our project please contact us at 
+                <a href="mailto:bharathi@uni-rostock.de" style="color: blueviolet;">bharathi@uni-rostock.de</a> or 
+                <a href="mailto:tobi@tu-clausthal.de" style="color: blueviolet;">tobi@tu-clausthal.de</a> if you have any questions.
+            </p>
+        </div>
+    </div>
+    <div>
+        <script type='text/javascript' id='mapmyvisitors' src='https://mapmyvisitors.com/map.js?cl=ffffff&w=300&t=m&d=uPI5i63cJFOi0hXtDmAB4dijakaZrQHJHbIjjlYwC-g'></script>    
+    </div>
+    <p style="margin-bottom:0;">Webpage adapted from <a href="https://wuzirui.github.io/gs-ssr/">GS-SSR</a>.</p>
+    <p style="margin-bottom:50px;">
+        This website is licensed under a Creative Commons Attribution-ShareAlike 4.0 International License.<br>
+        Webpage adapted from Nerfies and MARS. This web page is Zotero-connector friendly.
+    </p>
+</body>
+</html>
+
+
