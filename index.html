@@ -129,7 +129,7 @@
             
             <p style="padding: 40px; padding-top: 0;">The MCP4IFC system architecture (Fig. 1) is built on two core components: a Python-based <b>MCP server</b> that manages communication, and a <b>Blender add-on</b> that executes tasks. The server exposes the tool catalog to the LLM, while the add-on uses <b>IfcOpenShell</b> for all low-level IFC data operations and <b>Bonsai</b> to synchronize geometry with the Blender scene. This separation of concerns allows the LLM to operate on complex BIM data through a clean, standardized interface.</p>
             
-            <img src="image/mcp4ifc_architecture.png" style="width: 100%; padding-bottom: 10px;" alt="Method diagram">
+            <img src="image/overview3.png" style="width: 100%; padding-bottom: 10px;" alt="Method diagram">
             <p class="img-caption"><b>Figure 1 from the paper:</b> The MCP4IFC system architecture, showing the data flow from a user's prompt to the LLM Client, through the MCP Server, and into the Blender Environment for execution on the IFC Model.</p>
 
             <h4>A Comprehensive Toolset</h4>
@@ -156,23 +156,23 @@
             <h4 style="text-align: center;">IFC Generation from Single Text Prompts</h4>
             <p style="padding: 20px 40px 0 40px; text-align: center;">The LLM agent can generate complex IFC geometry from a single text prompt by invoking the framework's tools. (See Figure 4 in the paper).</p>
             <div class="gallery">
-                <img src="image/fig4a.png" alt="Two-storey structure">
-                <img src="image/fig4b.png" alt="Curved wall">
-                <img src="image/fig4c.png" alt="3-storey apartment block">
-                <img src="image/fig4d.png" alt="University campus">
-                <img src="image/fig4e.png" alt="Landmark bridge">
-                <img src="image/fig4f.png" alt="10-room single-floor house">
+                <img src="image/1.png" alt="Two-storey structure">
+                <img src="image/2.png" alt="Curved wall">
+                <img src="image/3.png" alt="3-storey apartment block">
+                <img src="image/4.png" alt="University campus">
+                <img src="image/5.png" alt="Landmark bridge">
+                <img src="image/6.png" alt="10-room single-floor house">
             </div>
 
             <h4 style="text-align: center; padding-top: 20px;">Iterative, Multi-Turn Design</h4>
             <p style="padding: 20px 40px 0 40px; text-align: center;">The agent can also build a model step-by-step, preserving context across multiple user instructions to iteratively refine a design. (See Figure 5 in the paper).</p>
             <div class="gallery">
-                <img src="image/fig5a.png" alt="L-shaped slab foot">
-                <img src="image/fig5b.png" alt="Perimeter walls added">
-                <img src="image/fig5c.png" alt="Door insertion">
-                <img src="image/fig5d.png" alt="Second-floor slab">
-                <img src="image/fig5e.png" alt="Hip roof generation">
-                <img src="image/fig5f.png" alt="Styled final building">
+                <img src="image/7_1.png" alt="L-shaped slab foot">
+                <img src="image/7_2.png" alt="Perimeter walls added">
+                <img src="image/7_3.png" alt="Door insertion">
+                <img src="image/7_4.png" alt="Second-floor slab">
+                <img src="image/7_5.png" alt="Hip roof generation">
+                <img src="image/7_6.png" alt="Styled final building">
             </div>
         </div>
     </div>
