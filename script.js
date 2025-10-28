@@ -76,5 +76,64 @@ document.addEventListener('DOMContentLoaded', function() {
             });
         });
     }
+
+    const interactiveCarousel = document.querySelector('.interactive-carousel');
+    if (interactiveCarousel) {
+        const images = Array.from(interactiveCarousel.querySelectorAll('.carousel-image'));
+        const nextButton = interactiveCarousel.querySelector('.carousel-next');
+        const prevButton = interactiveCarousel.querySelector('.carousel-prev');
+        const AUTOPLAY_INTERVAL = 1000;
+        let currentIndex = 0;
+        let autoplayId = null;
+
+        if (!images.length) {
+            return;
+        }
+
+        const showImage = (index) => {
+            images.forEach((img, i) => {
+                if (i === index) {
+                    img.classList.add('active');
+                } else {
+                    img.classList.remove('active');
+                }
+            });
+            currentIndex = index;
+        };
+
+        const goToNext = () => {
+            const nextIndex = (currentIndex + 1) % images.length;
+            showImage(nextIndex);
+        };
+
+        const goToPrev = () => {
+            const prevIndex = (currentIndex - 1 + images.length) % images.length;
+            showImage(prevIndex);
+        };
+
+        const restartAutoplay = () => {
+            if (autoplayId) {
+                clearInterval(autoplayId);
+            }
+            autoplayId = setInterval(goToNext, AUTOPLAY_INTERVAL);
+        };
+
+        if (nextButton) {
+            nextButton.addEventListener('click', () => {
+                goToNext();
+                restartAutoplay();
+            });
+        }
+
+        if (prevButton) {
+            prevButton.addEventListener('click', () => {
+                goToPrev();
+                restartAutoplay();
+            });
+        }
+
+        showImage(currentIndex);
+        restartAutoplay();
+    }
 });
 
